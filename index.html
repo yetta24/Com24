@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Un Carême Contre la Faim</title>
+    <style>
+        body {
+            font-family: Roboto, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #00053c;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            background-color: #f9f5eb;
+            padding: 20px;
+            border-bottom: 5px solid #f26c23;
+        }
+        .header h1 {
+            font-size: 24px;
+            color: #f26c23;
+            font-family: Futura, sans-serif;
+        }
+        .header p {
+            font-size: 16px;
+        }
+        .section {
+            margin: 20px 0;
+            padding: 15px;
+            background-color: #f7f9fc;
+            border-left: 5px solid #f26c23;
+        }
+        .section h2 {
+            font-size: 20px;
+            color: #f26c23;
+            font-family: Futura, sans-serif;
+            margin-bottom: 10px;
+        }
+        .section p {
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 160%;
+        }
+        .highlight {
+            background-color: #00558B;
+            color: white;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .highlight strong {
+            font-family: Futura, sans-serif;
+            font-size: 16px;
+        }
+        .cta {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .cta a {
+            background-color: #f26c23;
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 12px;
+            color: #777;
+        }
+        .accordion {
+            background-color: #00558B;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            margin: 10px 0;
+            border: none;
+            outline: none;
+            text-align: left;
+            font-family: Futura, sans-serif;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .panel {
+            padding: 15px;
+            background-color: #f7f9fc;
+            display: none;
+            overflow: hidden;
+            border-left: 5px solid #00558B;
+        }
+        .image-left {
+            float: left;
+            width: 150px;
+            height: 150px;
+            margin-right: 15px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .clearfix {
+            overflow: auto;
+        }
+    </style>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const accordions = document.querySelectorAll(".accordion");
+
+            accordions.forEach(acc => {
+                acc.addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    const panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Un Carême Contre la Faim et Pour la Souveraineté Alimentaire</h1>
+            <p>Depuis 60 ans, le CCFD-Terre Solidaire agit pour combattre la faim dans le monde et promouvoir une agriculture durable.</p>
+        </div>
+
+        <div class="section">
+            <h2>Édito : Ensemble pour un monde solidaire</h2>
+            <p>Depuis plus de 60 ans, le CCFD-Terre Solidaire s’engage avec ses partenaires à travers le monde pour réduire les inégalités, combattre la faim et promouvoir une agriculture respectueuse des humains et de l’environnement. Cet engagement, enraciné dans l’Évangile et la pensée sociale de l’Église, vous invite cette année à vivre un Carême placé sous le signe de la souveraineté alimentaire.</p>
+            <p>Nos équipes sont disponibles pour intervenir dans votre établissement ou paroisse et vous accompagner à travers des animations et des actions concrètes.</p>
+        </div>
+
+        <div class="section clearfix">
+            <img src="https://laplace.ccfd-terresolidaire.org/sites/default/files/styles/scale_crop_focal_point_16_9/public/articles/2024/09/Portrait%20de%20Virginie%20Amieux%20-%208.jpg?h=c3e3d417&itok=QEqLO0s1" alt="Portrait de Virginie Amieux" class="image-left">
+            <h2>Mot de la Présidente</h2>
+            <p><strong>Virginie Amieux</strong></p>
+            <p>Présidente du CCFD-Terre Solidaire</p>
+            <p>Dans son discours d’ouverture de la Journée mondiale de l’alimentation en 2020, le pape François invitait à « promouvoir une agriculture durable et diversifiée, soutenir les petites communautés agricoles et coopérer au développement rural dans les pays les plus pauvres ». Aujourd’hui encore, ces mots résonnent face à une crise alimentaire mondiale sans précédent.</p>
+            <p>En 2023, le Programme Alimentaire Mondial estimait que 333 millions de personnes souffrent de faim critique. Bien qu’ils nourrissent 70 % de la population mondiale, les petits agriculteurs représentent 80 % des affamés. <strong>Ensemble, mobilisons-nous</strong> pour un modèle agricole plus juste et respectueux des droits humains !</p>
+        </div>
+
+        <div class="section">
+            <h2>Des Animations Clés pour Vivre le Carême</h2>
+            <button class="accordion">Pas en avant de l’agriculture et du climat</button>
+            <div class="panel">
+                <p><strong>Objectifs :</strong> Permettre à un groupe de prendre conscience des conditions de vie des personnes travaillant la terre dans différents pays. Sensibiliser sur les inégalités et les liens entre agriculture et climat.</p>
+                <p><strong>Détails :</strong> Les participants incarnent des agriculteurs et avancent ou non en fonction de situations lues par l’animateur. Ce jeu de rôle met en évidence les inégalités globales. Le débriefing permet d’échanger sur les ressentis et les pistes d’action.</p>
+                <p><strong>Durée :</strong> 45 minutes | <strong>Public :</strong> Adultes et lycéens (10 à 35 participants).</p>
+            </div>
+
+            <button class="accordion">Il était une foi(s)… l’alimentation</button>
+            <div class="panel">
+                <p><strong>Objectifs :</strong> Découvrir, dans une perspective chrétienne, les enjeux liés à l’alimentation à travers le monde. Exprimer sa sensibilité et ses opinions en interprétant des textes bibliques.</p>
+                <p><strong>Détails :</strong> Les participants lisent des textes bibliques, découvrent des témoignages du monde entier, et réfléchissent ensemble à des solutions durables pour combattre la faim.</p>
+                <p><strong>Durée :</strong> 1 heure | <strong>Public :</strong> Tous publics dès 14 ans.</p>
+            </div>
+
+            <button class="accordion">Le Loup-Garou de l’Amazonie</button>
+            <div class="panel">
+                <p><strong>Objectifs :</strong> Sensibiliser à la déforestation et aux enjeux environnementaux à travers un jeu inspiré du célèbre Loup-Garou.</p>
+                <p><strong>Détails :</strong> Les joueurs incarnent des rôles variés (paysans, militants, exploiteurs forestiers) et débattent des impacts environnementaux et sociaux.</p>
+                <p><strong>Durée :</strong> 30 à 45 minutes | <strong>Public :</strong> Dès 12 ans (8 à 24 participants).</p>
+                <div class="cta"><a  href="https://ccfd-terresolidaire.org/jeu-du-loup-garou-version-amazonie/">En savoir plus sur l'animation</a></div>
+                
+            </div>
+        </div>
+
+        <div class="section clearfix">
+            <img src="https://ccfd-terresolidaire.org/wp-content/uploads/2022/07/Maroc-agroe%CC%81cologie-mai-2022-1-1024x684.jpg.webp" alt="Partenaire FNSA" class="image-left" style="border-radius: 0;">
+            <h2>Partenaire de l’Année : La Fédération Nationale du Secteur Agricole (FNSA)</h2>
+            <p>La FNSA est une organisation syndicale et associative au Maroc qui défend les droits des paysannes et paysans. Face à un modèle agro-industriel centré sur l’exportation, la FNSA milite pour une agriculture durable, solidaire et respectueuse de l’environnement.</p>
+            <p>En collaboration avec le CCFD-Terre Solidaire, la FNSA forme les petits exploitants à l’agroécologie à travers une ferme-école, offrant des compétences en gestion des ressources naturelles et en résilience face aux défis climatiques.</p>
+       
+        
+             Pour en savoir plus sur l'agroécologie au Maroc et les actions de la FNSA, cliquez sur le bouton ci-dessous.  
+
+<div class="cta">
+    <a href="https://ccfd-terresolidaire.org/maroc-lagroecologie-pour-lutter-contre-la-secheresse-jeudiphoto/" target="_blank">
+        Découvrir les actions de la FNSA au Maroc
+    </a>
+</div>
+ </div>
+        <div class="section">
+            <h2>Collecte et Engagement</h2>
+            <p>Organisez un événement dans votre paroisse ou établissement : Bol de Riz, cagnottes en ligne, ou collectes de rue. Ensemble, faisons un pas vers un monde plus juste !</p>
+            <blockquote>« Pour nous, chrétiens, le don est avant tout une réponse au don de Dieu lui-même. » – Claude Besson</blockquote>
+        </div>
+
+        <div class="cta">
+            <a href="https://ccfd-terresolidaire.org">Découvrir le CCFD-Terre Solidaire</a>
+        </div>
+
+        <div class="footer">
+            <p>CCFD-Terre Solidaire - Ensemble contre la faim et pour un avenir durable.</p>
+        </div>
+    </div>
+</body>
+</html>
